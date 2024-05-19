@@ -5,6 +5,9 @@ Default Css
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: Arial, sans-serif;
+}
 .clearfix::after{
     content: "";
     display: block;
@@ -27,7 +30,7 @@ img{
  Header  
  =================*/
 .fixed-with {
-    width: 1270px;
+    width: 1400px;
     margin: auto;
 }
 .header{
@@ -58,10 +61,13 @@ img{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    padding: 0 30px;
+    padding: 0 28px;
     line-height: 74px;
     border-right: 1px solid #fff;
     transition: .4s;
+}
+.header-right ul li:nth-child(1) a {
+    border-left: 1px solid #fff;
 }
 .header-right ul li a:hover{
     background: #2980b9;
@@ -71,7 +77,7 @@ img{
  Banner
  =================== */
 .banner{
-    background: url(https://developerjillur.me/images/banner.jpg) no-repeat center;
+    background: url(assets/banner.jpeg) no-repeat center;
     background-size: cover;
     padding: 200px 0;
 }
@@ -218,4 +224,8 @@ Footer
     color: #fff;
     font-size: 20px;
     margin-left: 10px;
+    transition: .5s;
+}
+.social-menu li a:hover{
+    color: red;
 }
